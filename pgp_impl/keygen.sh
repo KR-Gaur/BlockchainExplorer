@@ -1,9 +1,15 @@
 #! /bin/bash
 
 user_ID=$1
-key_type=$2
-bits=$3
-passphrase=$4
+#key_type=$2
+#bits=$3
+#passphrase=$4
+echo  
+echo 
+echo -n "------ *** PASS A NAME FOR SAVING GENERATED KEYS(default private , public)"
+echo  
+echo 
+echo 
 
 gpg --gen-key #$user_ID --key-type RSA --bits 2048 --passphrase $passphrase
 
